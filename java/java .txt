@@ -1,0 +1,8 @@
+
+
+public static void main (string [] args)   meaning of that?
+it is a mian method 
+public is visibility specifier that definrs the componet visibility 
+static : static indecates that the method /object/ vaiable 
+void: ist indecates thet the method returns nothing
+   
