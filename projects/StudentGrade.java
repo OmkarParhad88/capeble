@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class StudentGrade {
 
   String name;
-  int marathi, hindi, english, science, history, math, finall, count, id;
+  int marathi, hindi, english, science, history, math, id;
+  double per, count;
 
   void inputStud() {
     Scanner scanner = new Scanner(System.in);
@@ -28,8 +29,7 @@ public class StudentGrade {
     System.out.print(" history markas ");
     history = scanner.nextInt();
     count = count + history;
-    int per = (count / 6) * 100;
-    finall = per / 100;
+    per = (count / 600) * 100;
     scanner.close();
   }
 
@@ -45,42 +45,37 @@ public class StudentGrade {
   }
 
   void studGrade() {
-    if (finall > 90 && finall <= 100) {
+    if (per > 90 && per <= 100) {
       System.out.println(
-        " roll no is : " + id + " and Name is " + name + " they have 'A' grade"
-      );
-    } else if (finall > 80 && finall <= 90) {
+          " Roll no is : " + id + " and Name is " + name + " they have 'A' grade");
+    } else if (per > 80 && per <= 90) {
       System.out.println(
-        " roll no is : " +
-        id +
-        " and Name is " +
-        name +
-        " they have a 'B' grade"
-      );
-    } else if (finall > 70 && finall <= 80) {
+          " Roll no is : " +
+              id +
+              " and Name is " +
+              name +
+              " they have a 'B' grade");
+    } else if (per > 70 && per <= 80) {
       System.out.println(
-        " roll no is : " +
-        id +
-        " and Name is " +
-        name +
-        " they have a 'C' grade"
-      );
-    } else if (finall > 60 && finall <= 70) {
+          " Roll no is : " +
+              id +
+              " and Name is " +
+              name +
+              " they have a 'C' grade");
+    } else if (per > 60 && per <= 70) {
       System.out.println(
-        " roll no is : " +
-        id +
-        " and Name is " +
-        name +
-        " they have a 'D' grade"
-      );
-    } else if (finall > 50 && finall <= 60) {
+          " roll no is : " +
+              id +
+              " and Name is " +
+              name +
+              " they have a 'D' grade");
+    } else if (per > 50 && per <= 60) {
       System.out.println(
-        " roll no is : " +
-        id +
-        " and Name is " +
-        name +
-        " they have a 'F' grade"
-      );
+          " roll no is : " +
+              id +
+              " and Name is " +
+              name +
+              " they have a 'F' grade");
     }
   }
 
