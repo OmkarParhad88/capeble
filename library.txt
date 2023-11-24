@@ -1,0 +1,7 @@
+develop a comprehensive library management system that allows users to perform various operatins related to library management, such as adding books,searching for books,borrwing books returrning  
+books and geneating reports the porjects will focus on implementing object oriented progamming concepts multitreading functions and conditional statements.
+
+Features:
+Object oriented porgramming : implement classes for books , library members and librery staaff with appropriate attributes and method .use inheritance encapsultion and polumorphiwm to model differnet types of books and library uses
+multithreading :  implement a concurrent system where multiple library uses can borrow or return books simultaneously use multithreading to handle concurrent requests and ensure thread safety.
+functons: implement functions to perform various operations such as adding books to the library searching
