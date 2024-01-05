@@ -1,4 +1,4 @@
-public class project {
+public class project3 {
   private static final int SIZE = 9;
 
   public static void main(String[] args) {

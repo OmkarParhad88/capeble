@@ -1,7 +1,7 @@
 public class smple {
   public static void main(String[] args) {
-    String name = ""9876543212345"";
-    int p = Integer.parseInt(name);
-    System.out.println(p);
+    int a = 4;
+    int p = 0 % 3;
+    System.out.println(8 / 4 * 6 * 2 / 3 % 4 - 7);
   }
 }
