@@ -1,20 +1,21 @@
+import java.util.Scanner;
 
-public class smple {
+public class Main {
 
-    public static int findSingleElement(int[] nums) {
-        int ones = 0; // To store bits that appear once
-        int twos = 0; // To store bits that appear twice
-
-        for (int num : nums) {
-            ones = (ones ^ num) & ~twos;
-            twos = (twos ^ num) & ~ones;
-        }
-
-        return ones;
+    static int setBitAtPosition(int n, int pos) {
+     // Write your code here
+        int bitmask = n<<2;
+        int set = n | bitmask;
+        String bit = Interger     
+        return set;
     }
+
     public static void main(String[] args) {
-        int[] array = { 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6 };
-        int result = findSingleElement(array);
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int pos = scanner.nextInt();
+        int result = setBitAtPosition(n, pos);
         System.out.println(result);
+        scanner.close();
     }
 }
